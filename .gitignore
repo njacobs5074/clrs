@@ -1,0 +1,8 @@
+# vim
+*.swp
+
+# IntelliJ
+.idea/
+
+# Rust
+target/
