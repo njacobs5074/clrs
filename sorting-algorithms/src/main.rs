@@ -36,19 +36,6 @@ fn run_merge() {
     println!("sorted floats = {:?}", sorted_numbers);
 }
 
-fn run_merge() {
-    let numbers = random_integers(20);
-
-    println!("numbers = {:?}", numbers);
-    let sorted_numbers = merge_sort(&numbers);
-    println!("sorted_numbers = {:?}", sorted_numbers);
-
-    let numbers = random_floats(20);
-    println!("numbers = {:?}", numbers);
-    let sorted_numbers = merge_sort(&numbers);
-    println!("sorted_numbers = {:?}", sorted_numbers);
-}
-
 fn random_integers(num: i32) -> Vec<i32> {
     let mut vec: Vec<i32> = (0..num).collect();
     let mut rng: ThreadRng = rand::rng();
